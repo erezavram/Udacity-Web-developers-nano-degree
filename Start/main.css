@@ -1,5 +1,4 @@
-body,
-html {
+body, html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -12,32 +11,18 @@ body {
   color: #424242;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
-header,
-nav,
-footer,
-section,
-article,
-div {
+header, nav, footer, section, article, div {
   box-sizing: border-box;
-}
-
-head {
-    display: flex;
 }
 
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  height: auto;
 }
 
 
@@ -64,20 +49,17 @@ ul {
 .header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   min-height: 56px;
-  width: 100%;
   transition: min-height 0.3s;
-  display: inline-block;
 }
 
 .header__inner {
   width: 100%;
-  display: flex;
   margin-left: auto;
   margin-right: auto;
 }
 
 .header__logo {
-  height: 50px;
+  height: 72px;
   margin-right: 1em;
   vertical-align: top;
   margin-top: 12px;
@@ -85,17 +67,12 @@ ul {
 
 .header__title {
   font-weight: 300;
-  font-size: auto;
+  font-size: 4em;
   margin: 0.5em 0.25em;
   display: inline-block;
   color: #212121;
 }
 
-.header_menu {
-  min-width: 50px;
-  padding: 28px 0 0 0 0;
-  float: right;
-}
 
 /*
  *
@@ -103,11 +80,11 @@ ul {
  *
  */
 
- .nav {
-   width: 100%;
-   margin-left: auto;
-   margin-right: auto;
- }
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .nav__list {
   width: 100%;
@@ -155,6 +132,7 @@ main {
  * Content
  *
  */
+
 
 /*
  *
@@ -219,6 +197,8 @@ main {
 .top-news__item a {
   text-decoration: none;
   color: #666;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 .top-news__item a:hover,
@@ -235,7 +215,6 @@ main {
 
 .scores {
   padding-top: 1em;
-  width: 100%;
 }
 
 .scores__table {
@@ -358,6 +337,8 @@ main {
 .snippet__title a {
   text-decoration: none;
   color: #666;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 .snippet__title a:hover,
@@ -387,155 +368,4 @@ footer a {
   text-decoration: none;
   color: #333;
   padding: 1.5em;
-}
-
-@media only screen and (max-width: 469px) {
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .header__logo{
-    order: 0;
-  }
-  .header__title {
-    order: 1;
-    padding: 26px 0 0 0 ;
-    font-size: 1.8em;
-  }
-
-  .header_menu {
-    order: 2;
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    height: 28px;
-    padding: 35px 0 0 0;
-    float: right;
-  }
-
-  .hero {
-    order: 3;
-  }
-
-  .top-news {
-    order: 4;
-  }
-
-  .weather {
-    order: 5;
-  }
-
-  .scores {
-    order: 6;
-  }
-
-  .recent-news {
-    order: 7;
-  }
-
-  nav {
-    width: 300px;
-    position: absolute;
-    /* This trasform moves the drawer off canvas. */
-    -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0);
-    /* Optionally, we animate the drawer. */
-    transition: transform 0.3s ease;
-  }
-  nav.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-}
-
-@media only screen and (min-width: 470px) and (max-width: 699px) {
-  .content{
-      display: flex;
-      flex-wrap: wrap;
-  }
-
-  .header__title {
-    order: 1;
-    padding: 26px 0 0 0 ;
-    font-size: 2.3em;
-  }
-
-  .header_menu {
-    order: 2;
-    height: 33px;
-    padding: 36px 0 0 0;
-    float: right;
-    position: absolute;
-    /* This trasform moves the drawer off canvas. */
-    -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0);
-  }
-
-  .header__logo {
-    order: 0;
-    height: 60px;
-  }
-
-  .hero {
-    order: 3;
-  }
-
-  .top-news{
-    order: 4;
-    width: 60%;
-  }
-
-
-  .weather {
-    order: 5;
-    width: 40%;
-    float: right;
-  }
-
-  .scores {
-    order: 6;
-  }
-
-  .recent-news {
-    order: 7;
-  }
-}
-
-@media only screen and (min-width: 700px) {
-  .header__title {
-    padding: 26px 0 0 0 ;
-    font-size: 3.4em;
-  }
-
-  .header_menu {
-    height: 33px;
-    padding: 36px 0 0 0;
-    float: right;
-  }
-
-  .header__logo {
-    height: 80px;
-  }
-
-  .header_menu {
-    position: absolute;
-    /* This trasform moves the drawer off canvas. */
-    -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0);
-  }
-
-  .nav__item {
-    font-size: 1.2em;
-  }
-
-  .hero, .scores {
-    width: 60%;
-    display: inline-block;
-  }
-
-  .top-news, .weather {
-    width: 40%;
-    float: right;
-  }
-
 }
