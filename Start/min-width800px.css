@@ -1,0 +1,55 @@
+@media only screen and (min-width: 800px) {
+  body {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+  }
+  .header__title {
+    padding: 26px 0 0 0 ;
+    font-size: 3.4em;
+  }
+
+  .header_menu {
+    height: 33px;
+    padding: 36px 0 0 0;
+    float: right;
+  }
+
+  .header__logo {
+    height: 80px;
+  }
+
+  .nav__item {
+    font-size: 18px;
+  }
+
+  .hero, .scores {
+    width: 60%;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 16.5px;
+  }
+
+  .news__title {
+    font-size: 20px;
+  }
+
+  .snippet {
+    font-size: 16.5px;
+  }
+
+  .top-news__item {
+    height: auto;
+  }
+
+  .hero {
+    height: 330px;
+  }
+  .top-news, .weather {
+    width: 40%;
+    font-size: 15px;
+    float: right;
+  }
+
+}
